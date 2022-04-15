@@ -1,0 +1,37 @@
+<div class="container-fluid fill-height">
+  <div class="row justify-content-left text-center">
+    <div id="search-box" class="col-md-3 align-selft-center">
+      <h3 id="">Search for weather forecast</h3>
+      <form [formGroup]="weatherForm">
+        <div class="form-group">
+          <label for="text"></label>
+          <input
+            type="text"
+            id="locationName"
+            class="form-control"
+            placeholder="location"
+            formControlName="locationName"
+            required
+          />
+        </div>
+        <div class="button-box">
+          <button type="button" class="btn btn-primary" (click)="onSubmit()">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <div id="result" class="col-md-3 align-selft-center" *ngIf="temp">
+      <h2>
+        Temperature for
+        {{
+          this.weatherForm.value.locationName.charAt(0).toUpperCase() +
+            this.weatherForm.value.locationName.slice(1)
+        }}:
+      </h2>
+      <p id="temperature">
+        {{ temp }}
+      </p>
+    </div>
+  </div>
+</div>
