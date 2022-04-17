@@ -1,0 +1,13 @@
+#result{
+    margin-top:10%;
+    padding: 2%;
+    background-color: aqua;
+    border-radius: 3%;
+    margin-left: 40%;
+}
+
+
+#temperature{
+    font-size: 30px;
+    
+}

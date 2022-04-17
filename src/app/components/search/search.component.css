@@ -3,22 +3,10 @@
     padding: 2%;
     background-color: aqua;
     border-radius: 3%;
-    margin-left: 5%;
+    margin-left: 40%;
 }
 
 .button-box{
     margin-top:5%;
 }
 
-#result{
-    margin-top:10%;
-    padding: 2%;
-    background-color: aqua;
-    border-radius: 3%;
-    margin-left: 5%;
-}
-
-#temperature{
-    font-size: 30px;
-    
-}

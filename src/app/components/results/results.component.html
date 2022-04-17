@@ -1,1 +1,12 @@
-<p>results works!</p>
+<div id="result" class="col-md-3 align-self-center" *ngIf="temp">
+    <h2>
+      Temperature for
+      {{
+        this.locationName.charAt(0).toUpperCase() +
+          this.locationName.slice(1)
+      }}:
+    </h2>
+    <p id="temperature">
+      {{ temp }} °C
+    </p>
+  </div>
