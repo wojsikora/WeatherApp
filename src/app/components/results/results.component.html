@@ -1,12 +1,43 @@
-<div id="result" class="col-md-3 align-self-center" *ngIf="temp">
-    <h2>
-      Temperature for
-      {{
-        this.locationName.charAt(0).toUpperCase() +
-          this.locationName.slice(1)
-      }}:
-    </h2>
-    <p id="temperature">
-      {{ temp }} °C
-    </p>
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div id="header" class="col-md-6 align-self-center">
+      <h1>
+        Weather forecast for
+        {{
+          this.locationName.charAt(0).toUpperCase() + this.locationName.slice(1)
+        }}
+      </h1>
+    </div>
+    <div id="values" class="row justify-content-center">
+      <div class="col-md-3">
+        <h2>Temperature</h2>
+        <p id="value">{{ weatherInfo.temperature }} °C</p>
+      </div>
+      <div class="col-md-3">
+        <h2>Felt temperature</h2>
+        <p id="value">{{ weatherInfo.felt_temperature }} °C</p>
+      </div>
+    </div>
+    <div id="values" class="row justify-content-center">
+      <div class="col-md-3">
+        <h2>Pressure</h2>
+        <p id="value">{{ weatherInfo.pressure }} hPa</p>
+      </div>
+      <div class="col-md-3">
+        <h2>Humidity</h2>
+        <p id="value">{{ weatherInfo.humidity }} %</p>
+      </div>
+    </div>
+    <div id="values" class="row justify-content-center">
+      <div class="col-md-3">
+        <h2>Weather</h2>
+        <p id="value">{{ weatherInfo.weather }}</p>
+        <p id="value">{{ weatherInfo.weather_desc }}</p>
+      </div>
+      <div class="col-md-3">
+        <h2>Wind speed</h2>
+        <p id="value">{{ weatherInfo.wind_speed }} m/s</p>
+      </div>
+    </div>
   </div>
+</div>

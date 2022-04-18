@@ -36,18 +36,7 @@ export class SearchComponent implements OnInit {
       console.log(this.weatherForm.value);
       this.data.changeMessage(this.weatherForm.value.locationName);
       this.route.navigate(['/result']);
-      // this.weatherService.getLocationCoordinates(this.weatherForm.value.locationName).subscribe(
-      //   (data: any) => {
-      //     console.log(data[0].lat, data[0].lon);
-      //     this.getWeather(data[0].lat, data[0].lon, '10');
-      //   }
-      // )
     }
   }
 
-  // getWeather(lat: string, lon: string, cnt: string){
-  //   this.weatherService.getWeatherForecast(lat, lon, cnt).subscribe((data: any)=> {
-  //     this.temp = (data.list[0].main.temp-this.kelvinScale).toPrecision(2);
-  //   })
-  // }
 }

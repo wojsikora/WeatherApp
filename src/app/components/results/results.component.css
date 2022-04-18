@@ -6,8 +6,23 @@
     margin-left: 40%;
 }
 
+#header{
+    background-color: green;
+    border-radius: 3%;
+    padding: 1%;
+    text-align: center;
+}
 
-#temperature{
+
+#value{
     font-size: 30px;
     
 }
+
+.col-md-3{
+    background-color: aquamarine;
+    padding: 2%;
+    margin: 2%;
+    text-align: center;
+}
+
