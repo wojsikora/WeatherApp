@@ -1,7 +1,8 @@
-<div class="container-fluid fill-height">
+<div class="container-fluid">
   <div class="row justify-content-left text-center">
+    <img src="assets/images/weather.svg" />
     <div id="search-box" class="col-md-3 align-selft-center">
-      <h3 id="">Search for weather forecast {{message}}</h3>
+      <h3 id="">Search for weather forecast</h3>
       <form [formGroup]="weatherForm">
         <div class="form-group">
           <label for="text"></label>
@@ -15,8 +16,8 @@
           />
         </div>
         <div class="button-box">
-          <button type="button" class="btn btn-primary" (click)="onSubmit()">
-            Submit 
+          <button type="button" class="button-search" (click)="onSubmit()">
+            Submit
           </button>
         </div>
       </form>

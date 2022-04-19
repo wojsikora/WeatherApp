@@ -1,12 +1,24 @@
-#search-box{
-    margin-top:10%;
+#search-box {
+    margin-top: 10%;
     padding: 2%;
-    background-color: aqua;
+    background-color: #4BCF4A;
     border-radius: 3%;
-    margin-left: 40%;
+    color: #004B75;
 }
 
-.button-box{
-    margin-top:5%;
+.button-box {
+    margin-top: 5%;
 }
 
+.button-search {
+    color: white;
+    background-color: #004B75;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+img{
+    width: 400px;
+    margin-left: 15%;
+
+}

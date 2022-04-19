@@ -1,28 +1,42 @@
-#result{
-    margin-top:10%;
+/* #result {
+    margin-top: 10%;
     padding: 2%;
-    background-color: aqua;
+    background-color: #737BB4;
     border-radius: 3%;
     margin-left: 40%;
-}
+} */
 
-#header{
-    background-color: green;
-    border-radius: 3%;
+#header {
+    background-color: #4BCF4A;
+    border-radius: 20px;
     padding: 1%;
     text-align: center;
+    margin-top: 2%;
 }
 
 
-#value{
+#value {
     font-size: 30px;
-    
+
 }
 
-.col-md-3{
-    background-color: aquamarine;
+.col-md-3 {
+    background-color: #DDF8D7;
     padding: 2%;
     margin: 2%;
     text-align: center;
+    border-radius: 20px;
 }
 
+.container-fluid{
+    color: #004B75;
+}
+
+.button-search {
+    color: white;
+    background-color: #004B75;
+    border-radius: 20px;
+    padding: 10px;
+    align-self: center;
+    text-align: center;
+}

@@ -9,35 +9,44 @@
       </h1>
     </div>
     <div id="values" class="row justify-content-center">
+      <div>
+        <button type="button" class="button-search" [routerLink]="'/'">
+          Search another location
+        </button>
+      </div>
       <div class="col-md-3">
-        <h2>Temperature</h2>
+        <h2>Temperature <span class="material-icons">thermostat</span></h2>
         <p id="value">{{ weatherInfo.temperature }} °C</p>
       </div>
       <div class="col-md-3">
-        <h2>Felt temperature</h2>
+        <h2>Felt temperature <span class="material-icons">dry</span></h2>
         <p id="value">{{ weatherInfo.felt_temperature }} °C</p>
       </div>
     </div>
     <div id="values" class="row justify-content-center">
       <div class="col-md-3">
-        <h2>Pressure</h2>
+        <h2>Pressure <span class="material-icons"> gas_meter </span></h2>
         <p id="value">{{ weatherInfo.pressure }} hPa</p>
       </div>
       <div class="col-md-3">
-        <h2>Humidity</h2>
+        <h2>Humidity <span class="material-icons"> water_drop </span></h2>
         <p id="value">{{ weatherInfo.humidity }} %</p>
       </div>
     </div>
     <div id="values" class="row justify-content-center">
       <div class="col-md-3">
-        <h2>Weather</h2>
-        <p id="value">{{ weatherInfo.weather }}</p>
+        <h2>Weather <span class="material-icons"> landscape </span></h2>
+        <!-- <p id="value">{{ weatherInfo.weather }}</p> -->
         <p id="value">{{ weatherInfo.weather_desc }}</p>
       </div>
       <div class="col-md-3">
-        <h2>Wind speed</h2>
+        <h2>Wind speed <span class="material-icons"> air </span></h2>
         <p id="value">{{ weatherInfo.wind_speed }} m/s</p>
       </div>
     </div>
   </div>
 </div>
+<link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
