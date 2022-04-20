@@ -8,6 +8,21 @@
         }}
       </h1>
     </div>
+    <div class="row justify-content-center">
+      <div class="col-md-1" *ngFor="let day of next_week_days">
+        <h4>{{ day }}</h4>
+        <h5>
+          {{ futureWeatherMap.get(day)?.temperature }} °C
+          <span class="material-icons">thermostat</span>
+        </h5>
+        <p>
+          {{ futureWeatherMap.get(day)?.weather_desc }}  <br>
+          <span class="material-icons">{{
+            this.weatherIconMap.get(this.weatherInfo.weather)
+          }}</span>
+        </p>
+      </div>
+    </div>
     <div id="values" class="row justify-content-center">
       <div>
         <button type="button" class="button-search" [routerLink]="'/'">
@@ -15,12 +30,28 @@
         </button>
       </div>
       <div class="col-md-3">
+        <h2>Weather <span class="material-icons"> landscape </span></h2>
+        <!-- <p id="value">{{ weatherInfo.weather }}</p> -->
+        <p id="value">
+          {{ weatherInfo.weather_desc }}
+          <span class="material-icons">{{
+            this.weatherIconMap.get(this.weatherInfo.weather)
+          }}</span>
+        </p>
+      </div>
+      <div class="col-md-3">
         <h2>Temperature <span class="material-icons">thermostat</span></h2>
         <p id="value">{{ weatherInfo.temperature }} °C</p>
       </div>
+    </div>
+    <div id="values" class="row justify-content-center">
       <div class="col-md-3">
         <h2>Felt temperature <span class="material-icons">dry</span></h2>
         <p id="value">{{ weatherInfo.felt_temperature }} °C</p>
+      </div>
+      <div class="col-md-3">
+        <h2>Wind speed <span class="material-icons"> air </span></h2>
+        <p id="value">{{ weatherInfo.wind_speed }} m/s</p>
       </div>
     </div>
     <div id="values" class="row justify-content-center">
@@ -31,17 +62,6 @@
       <div class="col-md-3">
         <h2>Humidity <span class="material-icons"> water_drop </span></h2>
         <p id="value">{{ weatherInfo.humidity }} %</p>
-      </div>
-    </div>
-    <div id="values" class="row justify-content-center">
-      <div class="col-md-3">
-        <h2>Weather <span class="material-icons"> landscape </span></h2>
-        <!-- <p id="value">{{ weatherInfo.weather }}</p> -->
-        <p id="value">{{ weatherInfo.weather_desc }}</p>
-      </div>
-      <div class="col-md-3">
-        <h2>Wind speed <span class="material-icons"> air </span></h2>
-        <p id="value">{{ weatherInfo.wind_speed }} m/s</p>
       </div>
     </div>
   </div>

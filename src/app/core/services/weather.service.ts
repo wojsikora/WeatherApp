@@ -16,7 +16,7 @@ export class WeatherService {
     );
   }
 
-  public getWeatherForecast(lat: string, lon: string, cnt: string) {
+  public getWeatherForecast(lat: string, lon: string) {
     return this.http.get(
       this.apiURL +
         'data/2.5/forecast?lat=' + lat +
@@ -24,5 +24,16 @@ export class WeatherService {
         '&appid=' +
         this.apikey
     );
+  }
+
+  public getDailyWeatherForecast(lat: string, lon: string){
+      return this.http.get(
+        this.apiURL+'data/2.5/onecall?lat='+lat+
+        '&lon='+lon+
+        '&exclude=hourly'+
+        '&appid='+
+        this.apikey
+
+      );
   }
 }
