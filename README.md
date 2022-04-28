@@ -1,6 +1,6 @@
 # WeatherApp
 
-Simple app which show a few weather parameters for entered location. App built with [OpenWeather API](https://openweathermap.org/api).
+Simple app which shows a few weather parameters for entered location. App built with [OpenWeather API](https://openweathermap.org/api).
 
 ## Installation
 - Clone this repository
